@@ -1,7 +1,7 @@
 chcp 65001
-git remote add origin https://github.com/xyb12345678qwe/random-image-koa.git
+git remote add github https://github.com/xyb12345678qwe/random-image-koa.git
 git init
 git add .
 git commit -m "更新"
 
-git push -u origin main
+git push -u github main
