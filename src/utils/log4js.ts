@@ -25,7 +25,7 @@ declare global {
 }
 
 
-console.log = logger.info.bind(logger);
+console.log = logger.log.bind(logger);
 console.error = logger.error.bind(logger);
 console.info = logger.info.bind(logger);
 console.warn = logger.warn.bind(logger);

@@ -1,0 +1,42 @@
+{
+  "name": "memoizeasync",
+  "version": "1.1.0",
+  "description": "Helper for memoizing async functions and methods",
+  "main": "lib/memoizeAsync.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "lru-cache": "2.5.0",
+    "passerror": "1.1.1"
+  },
+  "devDependencies": {
+    "async": "^2.1.5",
+    "coveralls": "^2.11.16",
+    "eslint": "^3.15.0",
+    "eslint-config-onelint": "^2.0.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2",
+    "sinon": "^1.17.7",
+    "unexpected": "^10.26.0",
+    "unexpected-sinon": "^10.7.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha",
+    "travis": "npm test && npm run lint && npm run coverage && (<coverage/lcov.info coveralls || true)",
+    "coverage": "NODE_ENV=development nyc --reporter lcov --reporter text -- mocha && echo google-chrome coverage/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/papandreou/node-memoizeasync.git"
+  },
+  "keywords": [
+    "memo",
+    "memoize",
+    "async",
+    "cache"
+  ],
+  "author": "Andreas Lind <andreas@one.com>",
+  "license": "BSD"
+}
